@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="../static/css/style4.css">
+    <meta charset="UTF-8">
+    <title>Register Now</title>
+</head>
+<body>
+<div class="main">
+<div class="container">
+     <center><h1>Registration</h1></center><br>
+  <form action="/register" method="post">
+ 
+  <div class="mb-3">
+    <label for="Username" class="form-label">Username</label><br><br>
+    <input type="text" class="form-control" placeholder="username" name="username" required>
+
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label><br><br>
+    <input type="email" class="form-control" placeholder="Email" name="email" required>
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="contact" class="form-label">Contact</label><br><br>   
+    <input type="tel" class="form-control" placeholder="Enter 10-digit number" maxlength="10" name="contact" pattern="[0-9]{10}" required>
+  </div>
+  <br>
+  <div class="mb-3">
+    <label for="Password" class="form-label">Password</label><br><br>
+    <input type="password" class="form-control" placeholder="Password" name="password" required>
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary">Register</button>
+</form>
+</div>
+</div>
+</body>
+</html>
