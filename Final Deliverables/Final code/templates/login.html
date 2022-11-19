@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/css/style3.css">
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+    <center><h1>Login Here</h1></center><br><br>
+    <form action="/login" method="post">
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" id="username" name="username" required>
+      </div>
+      <br>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="password" required>
+      </div>
+      <br>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <br/>
+    Don't have an account <a href="/register" class="btn btn-primary btn-sm">Register Now</a>
+    <h5 class="err">{{info}}</h5>
+    </div>
+</div>
+</body>
+</html>
